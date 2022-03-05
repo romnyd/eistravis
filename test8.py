@@ -1,11 +1,11 @@
-from ejercicio import addit
+from ejercicio import max
 import unittest
 
 class TestAddit(unittest.TestCase):
 
 	def test_success(self):
-                resultado = addit(3)
-                self.assertEqual(resultado, 8)
+                resultado = max([1, 8, 3, 0, 12])
+                self.assertEqual(resultado,12)
 
 
 if __name__ == '__main__':
